@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'antd/dist/antd.css'
+import axios from 'utils/axios.js'
+// Vue.prototype.$axios
+React.Component.prototype.$axios = axios
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
